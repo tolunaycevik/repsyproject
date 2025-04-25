@@ -1,21 +1,8 @@
-# Repsy Package Repository
+# Repsy Project Repository
 
-A **minimal**, **developer-friendly** REST API for managing Repsy `.rep` packages and their metadata.
-
-> _"This is my take on a simple package registry—no frills, just the essentials you need to deploy and fetch `.rep` archives in a reproducible way."_
 
 ---
 
-## 🛠️ Features
-
-- **Deploy**: Upload a `.rep` file (ZIP) and a `meta.json` to `/{name}/{version}`.
-- **Download**: Fetch `.rep` or `meta.json` via `/{name}/{version}/{fileName}`.
-- **Storage Strategy**: Switch between filesystem or MinIO (S3-compatible) with a simple config flag.
-- **PostgreSQL**: Tracks package metadata and prevents accidental overwrites.
-- **Validation & Error Handling**: Rejects bad requests with clear JSON error messages.
-- **Dockerized**: One `docker-compose up` brings up Postgres, MinIO, and the app.
-
----
 
 ## 📦 Tech Stack
 
